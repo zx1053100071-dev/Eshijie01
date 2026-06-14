@@ -24,6 +24,7 @@ export interface PortfolioItem {
     gradient: string;
   };
   aspectRatio: 'landscape' | 'portrait' | 'square';
+  image?: string;
 }
 
 export interface Milestone {

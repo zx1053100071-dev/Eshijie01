@@ -5,6 +5,22 @@
 
 import { CompanyInfo, Milestone, PortfolioItem, ContactDetails } from './types';
 
+import goodFieldsImg1 from '../assets/good-fields/g1.png';
+import goodFieldsImg2 from '../assets/good-fields/g2.png';
+import goodFieldsImg3 from '../assets/good-fields/g3.png';
+import goodFieldsImg4 from '../assets/good-fields/g4.png';
+import goodFieldsImg5 from '../assets/good-fields/g5.png';
+import goodFieldsImg6 from '../assets/good-fields/g6.png';
+import goodFieldsImg7 from '../assets/good-fields/g7.png';
+import goodFieldsImg8 from '../assets/good-fields/g8.png';
+import goodFieldsImg9 from '../assets/good-fields/g9.png';
+import goodFieldsImg10 from '../assets/good-fields/g10.png';
+
+const goodFieldsImages = [
+  goodFieldsImg1, goodFieldsImg2, goodFieldsImg3, goodFieldsImg4, goodFieldsImg5,
+  goodFieldsImg6, goodFieldsImg7, goodFieldsImg8, goodFieldsImg9, goodFieldsImg10
+];
+
 export const companyInfo: CompanyInfo = {
   name: "益世界",
   englishName: "Eworld",
@@ -439,7 +455,8 @@ export const portfolioItems: PortfolioItem[] = [
     },
     imageType: "chinese-ink",
     colors: { primary: "#78350f", secondary: "#b45309", accent: "#fef3c7", gradient: "from-[#78350f] via-[#fef3c7] to-[#b45309]" },
-    aspectRatio: "landscape"
+    aspectRatio: "landscape",
+    image: goodFieldsImages[0]
   },
   {
     id: "g2",
@@ -456,7 +473,8 @@ export const portfolioItems: PortfolioItem[] = [
     },
     imageType: "chinese-ink",
     colors: { primary: "#9d174d", secondary: "#db2777", accent: "#fbcfe8", gradient: "from-[#9d174d] to-[#db2777]" },
-    aspectRatio: "portrait"
+    aspectRatio: "portrait",
+    image: goodFieldsImages[1]
   },
   {
     id: "g3",
@@ -473,7 +491,8 @@ export const portfolioItems: PortfolioItem[] = [
     },
     imageType: "geometry",
     colors: { primary: "#1e3a8a", secondary: "#3b82f6", accent: "#bfdbfe", gradient: "from-[#1e3a8a] to-[#bfdbfe]" },
-    aspectRatio: "landscape"
+    aspectRatio: "landscape",
+    image: goodFieldsImages[2]
   },
   {
     id: "g4",
@@ -490,7 +509,8 @@ export const portfolioItems: PortfolioItem[] = [
     },
     imageType: "chinese-ink",
     colors: { primary: "#172554", secondary: "#14532d", accent: "#e2e8f0", gradient: "from-[#172554] via-[#14532d] to-[#0f172a]" },
-    aspectRatio: "portrait"
+    aspectRatio: "portrait",
+    image: goodFieldsImages[3]
   },
   {
     id: "g5",
@@ -507,7 +527,8 @@ export const portfolioItems: PortfolioItem[] = [
     },
     imageType: "chinese-ink",
     colors: { primary: "#064e3b", secondary: "#115e59", accent: "#ccfbf1", gradient: "from-[#064e3b] via-[#ccfbf1] to-[#115e59]" },
-    aspectRatio: "landscape"
+    aspectRatio: "landscape",
+    image: goodFieldsImages[4]
   },
   {
     id: "g20",
@@ -524,7 +545,8 @@ export const portfolioItems: PortfolioItem[] = [
     },
     imageType: "chinese-ink",
     colors: { primary: "#78350f", secondary: "#92400e", accent: "#fef3c7", gradient: "from-[#78350f] via-[#fef3c7] to-[#d97706]" },
-    aspectRatio: "square"
+    aspectRatio: "square",
+    image: goodFieldsImages[5]
   },
   // 以下为填充这城有良田20张的后续项 (g6-g19)
   {
@@ -536,7 +558,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "古雅高贵的人像配以青团、麦穗的生机绿色。将传统的骨牌格排版融合大面积纯色留白，以最地道的视觉语言歌颂中国悠久的农耕生活，在节气发布会引发刷屏级反响。",
     details: { role: "核心创意平面", team: "《这城有良田》公关美术", software: "Illustrator, Sai", date: "2024.04" },
     imageType: "chinese-ink",
-    colors: { primary: "#14532d", secondary: "#166534", accent: "#f0fdf4", gradient: "from-[#14532d] to-[#f0fdf4]" }, aspectRatio: "portrait"
+    colors: { primary: "#14532d", secondary: "#166534", accent: "#f0fdf4", gradient: "from-[#14532d] to-[#f0fdf4]" }, aspectRatio: "portrait",
+    image: goodFieldsImages[6]
   },
   {
     id: "g7",
@@ -547,7 +570,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "设计的一款在网页上做无缝平滑滑动的大长图。所有NPC武将以独创的软糯、灵动Q版形式重绘，在错落有致的大唐农舍前或抓鸡、或耕作，具有浓郁的人情味和诙谐色彩。",
     details: { role: "Q版首席画师", team: "《这城有良田》闪光原画组", software: "Photoshop", date: "2024.01" },
     imageType: "chinese-ink",
-    colors: { primary: "#7c2d12", secondary: "#c2410c", accent: "#ffedd5", gradient: "from-[#7c2d12] to-[#ffedd5]" }, aspectRatio: "landscape"
+    colors: { primary: "#7c2d12", secondary: "#c2410c", accent: "#ffedd5", gradient: "from-[#7c2d12] to-[#ffedd5]" }, aspectRatio: "landscape",
+    image: goodFieldsImages[7]
   },
   {
     id: "g8",
@@ -558,7 +582,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "本画特为展示秦叔宝的无敌之姿。用大写粗犷的中国狂草书法「破阵」作为大背景，飞溅的水墨极速线条和闪烁金属光泽的玄色甲胄，创造出极其沉重、极具金属压迫感的暴力古美学。",
     details: { role: "核心画师", team: "游戏特效原图中心", software: "Photoshop, PaintTool SAI", date: "2023.10" },
     imageType: "chinese-ink",
-    colors: { primary: "#7f1d1d", secondary: "#991b1b", accent: "#fee2e2", gradient: "from-[#7f1d1d] via-[#991b1b] to-[#fee2e2]" }, aspectRatio: "portrait"
+    colors: { primary: "#7f1d1d", secondary: "#991b1b", accent: "#fee2e2", gradient: "from-[#7f1d1d] via-[#991b1b] to-[#fee2e2]" }, aspectRatio: "portrait",
+    image: goodFieldsImages[8]
   },
   {
     id: "g9",
@@ -569,7 +594,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "本案设计极其克制，采用低纯度、高明度的茶绿组合。画出了云山雾绕下掩映的雅洁市集与客栈，用柔和的扁平插图线条打造大面积无压力空间，治愈长期生活在钢筋水泥水泥森林的当代白领客户。",
     details: { role: "场景主笔", team: "研发美术中心二组", software: "Photoshop, Procreate", date: "2024.02" },
     imageType: "chinese-ink",
-    colors: { primary: "#0f4c3a", secondary: "#14532d", accent: "#f0fdf4", gradient: "from-[#14532d] to-[#d1fae5]" }, aspectRatio: "portrait"
+    colors: { primary: "#0f4c3a", secondary: "#14532d", accent: "#f0fdf4", gradient: "from-[#14532d] to-[#d1fae5]" }, aspectRatio: "portrait",
+    image: goodFieldsImages[9]
   },
   {
     id: "g10",
@@ -580,7 +606,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "全海报大胆选取极淡淡黄作为打底宣纸，将粗墨大字「明镜高悬」置于视觉正中，把可爱的卡通县令头像与朱红印章进行斜视、倒置的不规则排版碰撞，富有新国潮平面设计先锋品格。",
     details: { role: "平面大师", team: "《这城有良田》公关美术", software: "Illustrator, Photoshop", date: "2023.12" },
     imageType: "geometry",
-    colors: { primary: "#312e81", secondary: "#1e1b4b", accent: "#ef4444", gradient: "from-[#1e1b4b] to-[#ef4444]" }, aspectRatio: "portrait"
+    colors: { primary: "#312e81", secondary: "#1e1b4b", accent: "#ef4444", gradient: "from-[#1e1b4b] to-[#ef4444]" }, aspectRatio: "portrait",
+    image: goodFieldsImages[0]
   },
   {
     id: "g11",
@@ -591,7 +618,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "颠覆行业常用的古板木纹UI，设计组自创「春水翠玉」拟真质感。在面板主框采用通透翠润的玉石环扣，配以极为工整、呼吸自如的细长魏碑标题字，呈现极富温润文雅的书卷香气。",
     details: { role: "UI/UX首席设计师", team: "游戏交互中心二组", software: "Photoshop, Figma", date: "2024.03" },
     imageType: "geometry",
-    colors: { primary: "#064e1b", secondary: "#115e2e", accent: "#ccfbda", gradient: "from-[#064e1b] via-[#ccfbda] to-[#115e2e]" }, aspectRatio: "landscape"
+    colors: { primary: "#064e1b", secondary: "#115e2e", accent: "#ccfbda", gradient: "from-[#064e1b] via-[#ccfbda] to-[#115e2e]" }, aspectRatio: "landscape",
+    image: goodFieldsImages[1]
   },
   {
     id: "g12",
@@ -602,7 +630,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "着重刻画晨曦微亮，刚开张的包子摊蒸腾而上的袅袅白雾。利用光影极度细腻的衍射与折射，画出了熙熙攘攘的小商贩、嬉笑的幼童，散发出古代尘世生活的质朴幸福气息。",
     details: { role: "高级插画师", team: "人文原画课", software: "Photoshop, Procreate", date: "2023.09" },
     imageType: "chinese-ink",
-    colors: { primary: "#78350f", secondary: "#d97706", accent: "#fef3c7", gradient: "from-[#78350f] to-[#f59e0b]" }, aspectRatio: "landscape"
+    colors: { primary: "#78350f", secondary: "#d97706", accent: "#fef3c7", gradient: "from-[#78350f] to-[#f59e0b]" }, aspectRatio: "landscape",
+    image: goodFieldsImages[2]
   },
   {
     id: "g13",
@@ -613,7 +642,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "画面采用深厚的墨色表现山岩，与之相对则是翠生发亮、波光粼粼的无垠梯田。清爽的水彩质感将春雨连绵下的唐代乡村，描绘成一方令人无限神往的桃花源仙境。",
     details: { role: "原画主笔", team: "人文原画课", software: "Photoshop", date: "2023.10" },
     imageType: "chinese-ink",
-    colors: { primary: "#134e4a", secondary: "#0d9488", accent: "#f0fdfa", gradient: "from-[#134e4a] via-[#f0fdfa] to-[#0d9488]" }, aspectRatio: "landscape"
+    colors: { primary: "#134e4a", secondary: "#0d9488", accent: "#f0fdfa", gradient: "from-[#134e4a] via-[#f0fdfa] to-[#0d9488]" }, aspectRatio: "landscape",
+    image: goodFieldsImages[3]
   },
   {
     id: "g14",
@@ -624,7 +654,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "本案在焦糖茶色中注入典雅米白。表现说书人讲到精彩处，全堂满座、茶气氤氲。通过生动细腻的五官刻画与光效运用，令观者甚至能透过静止画布，听到大唐茶舍里脆响的铜锣惊堂声。",
     details: { role: "高级插画师", team: "人文原画课", software: "Photoshop, Painter", date: "2023.11" },
     imageType: "chinese-ink",
-    colors: { primary: "#451a03", secondary: "#7c2d12", accent: "#ffedd5", gradient: "from-[#451a03] to-[#ffedd5]" }, aspectRatio: "landscape"
+    colors: { primary: "#451a03", secondary: "#7c2d12", accent: "#ffedd5", gradient: "from-[#451a03] to-[#ffedd5]" }, aspectRatio: "landscape",
+    image: goodFieldsImages[4]
   },
   {
     id: "g15",
@@ -635,7 +666,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "正统朱砂红配以磨砂象牙黄。设计组严格遵循陕北窗花剔刻纹理，在电脑中以多层浮雕阴阳刻出威武武将与连田秋收，大红配以大面积留白极具新国风民俗典尊风采。",
     details: { role: "非遗美学大使", team: "益创意跨界工作组", software: "Illustrator, Photoshop", date: "2024.02" },
     imageType: "vector",
-    colors: { primary: "#991b1b", secondary: "#dc2626", accent: "#fff5f5", gradient: "from-[#dc2626] to-[#fff5f5]" }, aspectRatio: "portrait"
+    colors: { primary: "#991b1b", secondary: "#dc2626", accent: "#fff5f5", gradient: "from-[#dc2626] to-[#fff5f5]" }, aspectRatio: "portrait",
+    image: goodFieldsImages[5]
   },
   {
     id: "g16",
@@ -646,7 +678,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "利用大面积留白铺写漫天飞雪中的大唐县衙一角，一树朱砂红梅开得极为傲立。粗体古典宋体大重叠排版一侧，完美平衡了中国画中经典极冷与极暖的色彩对抗天性。",
     details: { role: "平面主理", team: "《这城有良田》项目视觉组", software: "Photoshop, InDesign", date: "2024.12" },
     imageType: "chinese-ink",
-    colors: { primary: "#1e293b", secondary: "#334155", accent: "#f1f5f9", gradient: "from-[#1e293b] via-[#f1f5f9] to-[#334155]" }, aspectRatio: "landscape"
+    colors: { primary: "#1e293b", secondary: "#334155", accent: "#f1f5f9", gradient: "from-[#1e293b] via-[#f1f5f9] to-[#334155]" }, aspectRatio: "landscape",
+    image: goodFieldsImages[6]
   },
   {
     id: "g17",
@@ -657,7 +690,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "针对高级实体卡进行的设计。引入了精雕唐草浮雕边框与几何烫金暗轨。字体排布极富先锋设计风格，在中式狂野中展现西方极简格律框架的规训之美。",
     details: { role: "主工业平面师", team: "益物创意研发中心", software: "Illustrator, CAD", date: "2024.10" },
     imageType: "geometry",
-    colors: { primary: "#111827", secondary: "#4f46e5", accent: "#f59e0b", gradient: "from-[#111827] via-[#f59e0b] to-[#4f46e5]" }, aspectRatio: "portrait"
+    colors: { primary: "#111827", secondary: "#4f46e5", accent: "#f59e0b", gradient: "from-[#111827] via-[#f59e0b] to-[#4f46e5]" }, aspectRatio: "portrait",
+    image: goodFieldsImages[7]
   },
   {
     id: "g18",
@@ -668,7 +702,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "画卷捕捉了谪仙人李白在瀑布巨流之下踏浪起舞、大写意白茫剑气几乎要撕裂屏幕的一瞬。利用高能的水墨撕裂刷子展现剑气的物理厚重感，狂放而不失古典诗人的浪漫气息。",
     details: { role: "高级特约原画", team: "原画大师组", software: "Photoshop, Painter", date: "2024.05" },
     imageType: "chinese-ink",
-    colors: { primary: "#042f2e", secondary: "#0d9488", accent: "#e0f2fe", gradient: "from-[#042f2e] via-[#e1f5fe] to-[#0f172a]" }, aspectRatio: "portrait"
+    colors: { primary: "#042f2e", secondary: "#0d9488", accent: "#e0f2fe", gradient: "from-[#042f2e] via-[#e1f5fe] to-[#0f172a]" }, aspectRatio: "portrait",
+    image: goodFieldsImages[8]
   },
   {
     id: "g19",
@@ -679,7 +714,8 @@ export const portfolioItems: PortfolioItem[] = [
     description: "专为黑胶唱片包装设计。封面上一个巨大的手写青墨汉字「城」贯穿始终，背后则铺陈有唐代都城县城的激光微型暗线轨线。整副套盒雅致高标，极具顶级文化学术收藏级别格调。",
     details: { role: "平面装帧专家", team: "周边与文宣核心课", software: "Illustrator, KeyShot", date: "2024.06" },
     imageType: "chinese-ink",
-    colors: { primary: "#0c0a09", secondary: "#44403c", accent: "#ca8a04", gradient: "from-[#0c0a09] to-[#78350f]" }, aspectRatio: "square"
+    colors: { primary: "#0c0a09", secondary: "#44403c", accent: "#ca8a04", gradient: "from-[#0c0a09] to-[#78350f]" }, aspectRatio: "square",
+    image: goodFieldsImages[9]
   },
 
   // ================= 我是大东家作品集 (big-boss) =================

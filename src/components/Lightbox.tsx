@@ -30,6 +30,10 @@ export default function Lightbox({
 
   // Curated Unsplash stock imagery IDs map for ultra high-end matching
   const getImageUrl = (item: PortfolioItem) => {
+    if (item.image) {
+      return item.image;
+    }
+    
     // Generate a beautiful deterministic photorealistic or graphical background based on ID hashed to specific Unsplash IDs
     const unsplashIds: Record<string, string[]> = {
       'brand': [
