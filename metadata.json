@@ -1,0 +1,6 @@
+{
+  "name": "益世界设计中心作品集",
+  "description": "益世界设计中心（Eworld Design）官方作品集网站。包含公司介绍、发展历程和多款明星游戏《这城有良田》、《我是大东家》及品牌IP的作品集。界面设计简洁大气，支持亮暗主题、自动无缝滚动、拖拽滚动及点击放大图层交互。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

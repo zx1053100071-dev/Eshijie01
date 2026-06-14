@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans SC", "Source Han Sans SC", "Source Han Sans CN", "Source Han Sans", -apple-system, sans-serif;
+  --font-display: "Noto Sans SC", "Source Han Sans SC", sans-serif;
+  --color-indigo-50: #f5f3ff;
+  --color-indigo-950: #0c0a09;
+}
+
+/* Elegant scrollbar modifications */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.25);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.45);
+}
+
+/* Smooth screen navigation transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom slowing animation for sun icon */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
