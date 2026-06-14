@@ -45,16 +45,16 @@ export default function Hero({ onDiscoverClick }: HeroProps) {
 
       {/* 2. Overlaid Text & Visual Elements */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 xl:px-12 text-center select-none pointer-events-auto">
-        {/* Small Tagline */}
-        <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-white/10 dark:bg-gray-900/50 backdrop-blur-md border border-white/15 dark:border-white/5 mb-6 animate-pulse select-none">
+        {/* Small Tagline */ }
+        <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-black/40 lg:bg-white/15 dark:bg-gray-950/60 backdrop-blur-md border border-white/30 dark:border-white/10 mb-8 shadow-lg select-none">
           <img
             src={logoImg}
             alt="Logo"
-            className="h-4 w-auto object-contain opacity-90"
+            className="h-5 sm:h-6 w-auto object-contain brightness-110"
             referrerPolicy="no-referrer"
           />
-          <span className="w-1 h-1 rounded-full bg-indigo-400" />
-          <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-gray-200">
+          <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0" />
+          <span className="font-sans font-semibold text-xs sm:text-sm tracking-wide text-white leading-none">
             益世界 设计中心 · 2026官方作品集
           </span>
         </div>
