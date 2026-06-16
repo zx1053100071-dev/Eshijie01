@@ -67,10 +67,14 @@ export default function Header({ isDark, onToggleTheme }: HeaderProps) {
             referrerPolicy="no-referrer"
           />
           <div className="flex flex-col">
-            <span className="font-sans font-bold text-sm tracking-tight text-gray-900 dark:text-white leading-none mb-0.5">
+            <span className={`font-sans font-bold text-sm tracking-tight transition-colors duration-300 leading-none mb-0.5 ${
+              !isDark && scrolled ? 'text-black' : 'text-white'
+            }`}>
               益世界・设计中心
             </span>
-            <span className="font-mono text-[9px] tracking-widest text-gray-400 leading-none uppercase">
+            <span className={`font-mono text-[9px] tracking-widest transition-colors duration-300 leading-none uppercase ${
+              !isDark && scrolled ? 'text-black/60' : 'text-gray-400'
+            }`}>
               Eworld Design Portfolios
             </span>
           </div>
@@ -78,17 +82,29 @@ export default function Header({ isDark, onToggleTheme }: HeaderProps) {
 
         {/* Desktop Menu navigation */}
         <nav className="hidden md:flex items-center gap-8" id="desktop-navigation">
-          {menuItems.map((item) => (
-            <button
-              key={item.targetId}
-              onClick={() => handleScrollTo(item.targetId)}
-              className="font-sans font-medium text-xs text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors tracking-wide relative py-1 cursor-pointer"
-            >
-              {item.name}
-              {/* Thin underline indicator */}
-              <span className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-indigo-500 transform scale-x-0 origin-right transition-transform hover:scale-x-100" />
-            </button>
-          ))}
+          {menuItems.map((item) => {
+            const getLinkClass = () => {
+              const base = "font-sans font-medium text-xs transition-colors tracking-wide relative py-1 cursor-pointer ";
+              if (isDark) {
+                return base + "text-gray-300 hover:text-white";
+              }
+              if (scrolled) {
+                return base + "text-black hover:text-indigo-600";
+              }
+              return base + "text-white/90 hover:text-white";
+            };
+            return (
+              <button
+                key={item.targetId}
+                onClick={() => handleScrollTo(item.targetId)}
+                className={getLinkClass()}
+              >
+                {item.name}
+                {/* Thin underline indicator */}
+                <span className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-indigo-500 transform scale-x-0 origin-right transition-transform hover:scale-x-100" />
+              </button>
+            );
+          })}
         </nav>
 
         {/* Action Controls Frame */}
@@ -96,11 +112,21 @@ export default function Header({ isDark, onToggleTheme }: HeaderProps) {
           {/* Theme switcher */}
           <button
             onClick={onToggleTheme}
-            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 text-gray-700 dark:text-gray-300 transition-colors cursor-pointer border border-transparent hover:border-gray-200/50 dark:hover:border-gray-800/50"
+            className={
+              isDark
+                ? "p-2 rounded-full hover:bg-gray-900 text-gray-300 transition-colors cursor-pointer border border-transparent hover:border-gray-800/50"
+                : scrolled
+                ? "p-2 rounded-full hover:bg-gray-100 text-black transition-colors cursor-pointer border border-transparent hover:border-gray-200/50"
+                : "p-2 rounded-full hover:bg-white/10 text-white transition-colors cursor-pointer border border-transparent hover:border-white/15"
+            }
             title={isDark ? '切换亮色主题' : '切换暗黑模式'}
             id="theme-toggle-btn"
           >
-            {isDark ? <Sun size={17} className="text-amber-400 animate-spin-slow" /> : <Moon size={17} className="text-indigo-500" />}
+            {isDark ? (
+              <Sun size={17} className="text-amber-400 animate-spin-slow" />
+            ) : (
+              <Moon size={17} className={scrolled ? "text-black" : "text-white"} />
+            )}
           </button>
 
           {/* Quick portfolio button for tech feel */}
@@ -114,7 +140,13 @@ export default function Header({ isDark, onToggleTheme }: HeaderProps) {
           {/* Mobile menu toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 md:hidden rounded-lg bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800 text-gray-700 dark:text-gray-300 transition-colors cursor-pointer"
+            className={
+              isDark
+                ? "p-2 md:hidden rounded-lg bg-gray-900 border border-gray-800 text-gray-300 transition-colors cursor-pointer"
+                : scrolled
+                ? "p-2 md:hidden rounded-lg bg-gray-50 border border-gray-100 text-black transition-colors cursor-pointer"
+                : "p-2 md:hidden rounded-lg bg-white/10 border border-white/15 text-white transition-colors cursor-pointer"
+            }
             id="mobile-menu-burger"
           >
             {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}

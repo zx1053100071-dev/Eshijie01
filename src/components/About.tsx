@@ -3,22 +3,10 @@
  * SPDX-License-Identifier: Apache-2.5
  */
 
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { Palette, Globe, Sparkles, Calendar, Award, ChevronDown, ChevronUp } from 'lucide-react';
+import { Palette, Globe, Sparkles, Award } from 'lucide-react';
 import { companyInfo, milestones } from '../data';
 
 export default function About() {
-  const [expandedMilestone, setExpandedMilestone] = useState<string | null>("m5"); // Default expand the hot 2023 milestone
-
-  const toggleMilestone = (id: string) => {
-    if (expandedMilestone === id) {
-      setExpandedMilestone(null);
-    } else {
-      setExpandedMilestone(id);
-    }
-  };
-
   // Maps icon string to actual Lucide Icon Component
   const getIconComponent = (iconName: string) => {
     switch (iconName) {
@@ -110,103 +98,54 @@ export default function About() {
               <h3 className="font-sans font-black text-2xl sm:text-3xl text-gray-900 dark:text-white tracking-tight mt-1">
                 时光刻度与里程碑
               </h3>
+              <p className="max-w-md font-sans text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-2">
+                用好游戏创造快乐，记录每一项里程碑式的璀璨刻度。
+              </p>
             </div>
-            <p className="max-w-md font-sans text-xs sm:text-sm text-gray-500 dark:text-gray-400">
-              益世界设计团队历经十四载，秉持对艺术的信仰，将无数个灵感瞬间固化为商业爆款。
-            </p>
           </div>
 
-          {/* Timeline Node Chain */}
-          <div className="relative border-l border-gray-200 dark:border-gray-800 ml-4 md:ml-24 pl-8 md:pl-16 space-y-10 py-4">
-            {milestones.map((milestone) => {
-              const isExpanded = expandedMilestone === milestone.id;
-              
-              return (
-                <div key={milestone.id} className="relative group" id={`milestone-${milestone.id}`}>
-                  
-                  {/* Timeline circular absolute bullet switcher */}
-                  <div
-                    onClick={() => toggleMilestone(milestone.id)}
-                    className={`absolute -left-[45px] md:-left-[77px] w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all cursor-pointer ${
-                      isExpanded
-                        ? 'bg-gradient-to-tr from-indigo-500 via-purple-500 to-blue-500 text-white border-transparent shadow-lg shadow-indigo-500/25'
-                        : 'bg-white dark:bg-gray-950 border-gray-300 dark:border-gray-700 text-gray-400 dark:text-gray-500 group-hover:border-indigo-500 group-hover:text-indigo-500'
-                    }`}
-                  >
-                    <Calendar size={13} />
-                  </div>
+          {/* Timeline Node Chain without absolute overlapping positions */}
+          <div className="relative border-l border-gray-200 dark:border-gray-800 ml-4 md:ml-8 space-y-10 py-4">
+            {milestones.map((milestone) => (
+              <div key={milestone.id} className="relative pl-8 md:pl-12 group" id={`milestone-${milestone.id}`}>
+                
+                {/* Glowing bullet accurately centered on the vertical border-l */}
+                <div
+                  className="absolute -left-[7px] top-6 w-3.5 h-3.5 rounded-full border-2 border-indigo-500 bg-white dark:bg-gray-950 transition-all duration-300 group-hover:scale-125 group-hover:bg-indigo-500 group-hover:shadow-[0_0_12px_rgba(99,102,241,0.6)]"
+                />
 
-                  {/* Year Tag Column block */}
-                  <div className="absolute -left-[54px] md:-left-[122px] top-1 Hidden md:flex flex-col items-end">
-                    <span className="font-mono text-lg font-black tracking-tighter text-gray-900 dark:text-white leading-none">
-                      {milestone.year}
-                    </span>
-                    <span className="font-mono text-[9px] tracking-widest text-indigo-400 font-bold uppercase mt-0.5">
-                      Year
-                    </span>
-                  </div>
-
-                  {/* Main card box details */}
-                  <div
-                    onClick={() => toggleMilestone(milestone.id)}
-                    className={`p-6 md:p-8 rounded-2xl border transition-all duration-300 cursor-pointer text-left ${
-                      isExpanded
-                        ? 'bg-white dark:bg-gray-900 border-gray-100 dark:border-gray-900/50 shadow-xl shadow-gray-200/40 dark:shadow-none'
-                        : 'bg-transparent border-transparent hover:bg-gray-100/40 dark:hover:bg-gray-900/10'
-                    }`}
-                  >
-                    <div className="flex items-start justify-between">
-                      <div>
-                        {/* Mobile Year indicator */}
-                        <span className="md:hidden font-mono text-xs font-black text-indigo-500 tracking-wider block mb-1">
-                          {milestone.year}年
-                        </span>
-                        <h4 className="font-sans font-bold text-base md:text-lg text-gray-900 dark:text-white tracking-tight">
-                          {milestone.title}
-                        </h4>
-                      </div>
-
-                      {/* Expand Chevron */}
-                      <div className="text-gray-400 dark:text-gray-500 shrink-0 ml-4">
-                        {isExpanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                      </div>
+                {/* Elegant interactive card utilizing split grid for screen-adaptive responsive display */}
+                <div
+                  className="p-6 md:p-8 rounded-2xl border border-gray-100 dark:border-gray-900/60 bg-white dark:bg-gray-900/20 shadow-sm hover:shadow-md hover:border-indigo-100 dark:hover:border-indigo-950/60 hover:bg-gradient-to-br hover:from-white hover:to-indigo-50/10 dark:hover:from-gray-900/30 dark:hover:to-indigo-950/5 transition-all duration-300 text-left"
+                >
+                  <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
+                    
+                    {/* Left: Year range / epoch display */}
+                    <div className="md:col-span-4 lg:col-span-3 flex flex-col">
+                      <span className="font-mono text-xl sm:text-2xl font-black text-indigo-600 dark:text-indigo-400 tracking-tight leading-none">
+                        {milestone.year}
+                      </span>
+                      <span className="font-mono text-[9px] tracking-widest text-gray-400 dark:text-gray-500 font-bold uppercase mt-1.5">
+                        Company Epoch
+                      </span>
                     </div>
 
-                    <p className="mt-3 font-sans text-xs md:text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-                      {milestone.description}
-                    </p>
-
-                    {/* Expandable key projects lists */}
-                    <AnimatePresence>
-                      {isExpanded && (
-                        <motion.div
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: 'auto' }}
-                          exit={{ opacity: 0, height: 0 }}
-                          transition={{ duration: 0.25, ease: 'easeInOut' }}
-                          className="overflow-hidden"
-                        >
-                          <div className="mt-5 pt-5 border-t border-gray-100 dark:border-gray-800/80 space-y-2.5">
-                            <span className="text-[10px] uppercase font-mono tracking-widest text-indigo-500 dark:text-indigo-400 font-bold block mb-2.5">
-                              Key Visual Accomplishments // 核心设计项目贡献:
-                            </span>
-                            {milestone.expandDetails.map((item, idx) => (
-                              <div
-                                key={idx}
-                                className="flex items-start gap-2.5 text-xs text-gray-700 dark:text-gray-300 font-sans"
-                              >
-                                <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 mt-1.5 shrink-0" />
-                                <span className="leading-relaxed">{item}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </motion.div>
+                    {/* Right: Milestone titles & textual content descriptions */}
+                    <div className="md:col-span-8 lg:col-span-9 flex flex-col justify-start">
+                      <h4 className="font-sans font-black text-base sm:text-lg text-gray-900 dark:text-white tracking-tight leading-snug">
+                        {milestone.title}
+                      </h4>
+                      {milestone.description && (
+                        <p className="mt-3 font-sans text-xs sm:text-sm text-gray-500 dark:text-gray-400 leading-relaxed whitespace-pre-line text-justify">
+                          {milestone.description}
+                        </p>
                       )}
-                    </AnimatePresence>
+                    </div>
+
                   </div>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
 

@@ -26,26 +26,26 @@ export const companyInfo: CompanyInfo = {
   englishName: "Eworld",
   founded: "2012年",
   slogan: "用好游戏创造快乐",
-  quote: "设计不仅仅是视觉的表达，更是产品灵魂的具象。我们用创意编织触手可及的想象，用细节构筑沉浸式的文化桥梁。",
+  quote: "设计不仅仅是视觉的表面呈现，更是用视觉构建快乐的一座桥梁。",
   quoteAuthor: "益世界设计中心总监",
   introParagraphs: [
-    "益世界（Eworld）成立于2012年，是中国领先的移动游戏发行商与研发商之一。作为精品数字文创的笃行者，我们始终秉承「用好游戏创造快乐」的理念，深耕模拟经营、角色扮演、策略等多元赛道，成功打造和发行了多款风靡全球的移动游戏大作。",
-    "益世界设计中心（Eworld Design Center）作为公司创意的核心引擎，汇聚了百余位业内资深的设计艺术家、视觉包装专家以及产品体验设计师。我们致力于在游戏概念美术、品牌视觉识别、数字交互体验、IP文创衍生等全维度，探索前沿科技与中国传统文化的深度融合。凭借极致的视觉追求与独树一帜的排版美学，让每一次游戏发布都成为一场令人瞩目的视觉盛宴。"
+    "益世界（Eworld）成立于2012年，是中国领先的移动游戏发行商与研发商之一。作为精品数字文创的笃行者，我们始终秉承「用好游戏创造快乐」的理念，深耕模拟经营、角色扮演、策略等多元赛道，成功打造和发行了多款风靡全球 of 移动游戏大作。",
+    "益世界设计中心（Eworld Design Center）作为公司创意的核心引擎，汇聚了百余位业内资深的设计艺术家、视觉包装专家以及产品体验设计师。我们致力于打磨出极具艺术与商业双重价值的游戏视觉设计体系，并制定了严苛的界面、平面及多媒体商业包装标准。多年来，我们先后以《商道高手》、《我是大东家》、《这城有良田》等千万级名作，惊艳了无数玩家的心灵，用视觉美学赋能好游戏的无限可能。"
   ],
   features: [
     {
-      title: "硬核美术积淀",
-      description: "融合前沿数字艺术，打通插画设计、概念艺术与3D工业建模的全链路闭环。",
+      title: "卓越视觉美学",
+      description: "从交互UI到平面大KV，用极致匠心打磨每一张画作",
       icon: "Palette"
     },
     {
-      title: "精品文创出海",
-      description: "让民族底蕴乘帆出海，将国风神韵注入数字卡牌，实现传统与现代的破壁共生。",
+      title: "精品出海与多元化",
+      description: "海外多点开花，建立全球多元视觉设计与多端匹配管线",
       icon: "Globe"
     },
     {
-      title: "自研IP潮玩生态",
-      description: "通过IP形象设计、潮流盲盒、时尚周边开发，让「益小萌」深度连结全球玩家。",
+      title: "数字文创创新",
+      description: "整合三维、AI、交互等前沿技术，赋能好游戏的无限未来",
       icon: "Sparkles"
     }
   ]
@@ -55,44 +55,51 @@ export const milestones: Milestone[] = [
   {
     id: "m1",
     year: "2012",
-    title: "扬帆起航",
-    description: "益世界公司正式创立，明确以移动游戏为核心的发展路线，设计团队初步组建并建立视觉规范。",
-    expandDetails: ["正式确立品牌标准字与核心VI手册", "完成早期游戏联运系统的UI/UX统一化包装"]
+    title: "公司创立",
+    description: "",
+    expandDetails: []
   },
   {
     id: "m2",
-    year: "2015",
-    title: "业务升级与规模拓展",
-    description: "确立独代发行战略，成立独立视觉策划与媒介设计组，实现游戏商业视觉的飞跃发展。",
-    expandDetails: ["服务多款千万级DAU独代项目首发包装", "品牌画卷式叙事海排版在行业内崭露头角"]
+    year: "2013 - 2015",
+    title: "首创联运分发",
+    description: "行业首创超级SDK分发技术和服务体系，打通游戏产业链的“毛细血管”。",
+    expandDetails: []
   },
   {
     id: "m3",
-    year: "2018",
-    title: "深耕模拟经营赛道",
-    description: "多款标杆产品获得市场瞩目，设计中心升级为一级部门，探索潮流IP与泛娱乐衍生领域的创新可能。",
-    expandDetails: ["推出「益小萌」1.0版品牌IP形象", "打造极简极静的游戏展台视觉艺术，亮相各大游戏博览会"]
+    year: "2016 - 2017",
+    title: "构建独代发行",
+    description: "开拓独代发行业务，产品布局回合、MMO、卡牌等游戏类型。为玩家打造的手游精选平台——1号玩家APP上线。",
+    expandDetails: []
   },
   {
     id: "m4",
-    year: "2021",
-    title: "破圈爆发与爆款诞生",
-    description: "明星项目《我是大东家》上线运行即成爆款。设计中心制定全方位创意思路，掀起Q版商贸国漫风潮。",
-    expandDetails: ["与多项华语经典情怀IP展开视觉跨界联动", "斩获金翎奖等业内多项重磅年度设计及视觉大奖"]
+    year: "2018 - 2019",
+    title: "开创模拟经商赛道",
+    description: "从独代发行到孵化CP，赛道差异化破局，并成功孵化《金币大富翁》、《商道高手》，两款产品均实现月流水破亿；同步搭建自研团队，成为集研发孵化、发行运营一体化的综合型游戏公司。",
+    expandDetails: []
   },
   {
     id: "m5",
-    year: "2023",
-    title: "精品矩阵与国风美学",
-    description: "古风国韵《这城有良田》震撼登场。团队融合传统江南水墨与现代拼贴设计规范，开辟治愈系治荒国风新纪元。",
-    expandDetails: ["非物质文化遗产联动：在游戏艺术包装中引入传统剪纸、皮影戏等传统意象", "定制版「山海益游」文创年节礼盒深受行业赞许"]
+    year: "2020 - 2022",
+    title: "品牌升级，进军海外",
+    description: "从“益玩游戏”升级为“益世界”，以东南亚及日韩为起点，战略进军海外市场；\n以原生产品开拓全球化，《拜托了社长》荣登日本IOS免费榜TOP3，畅销榜TOP10；\n2021年成功孵化古风题材模拟经商标杆产品《我是大东家》。",
+    expandDetails: []
   },
   {
     id: "m6",
-    year: "2026",
-    title: "数字文创世界新坐标",
-    description: "设计中心全栈拥抱3D交互与数字生成，构建全球化出海视觉管线，将东方文创之美带向更广阔的全球舞台。",
-    expandDetails: ["「益小萌」3D潮玩宇宙在多国线下发售", "荣获全球性数字设计大赛银奖，设立首个数字文创设计实验室"]
+    year: "2023 - 2024",
+    title: "双端发行，领跑小游戏",
+    description: "业内率先践行“APP+小游戏”的双端发行模式，并卓有成效，多款标杆产品长年位列小游戏畅销排行榜前列；\n2023年成功孵化模拟经营+SLG融合玩法产品《这城有良田》，核心赛道产品矩阵形成，成为模拟经营品类头部厂商。",
+    expandDetails: []
+  },
+  {
+    id: "m7",
+    year: "2025 - 2026",
+    title: "品类突破，孵化升级",
+    description: "夯实赛道优势，追求品类突破，扩大区域推进全球，孵化模式持续升级，《Lands of Jail》《异世界慢生活》《疯狂水世界》等多款创新品类产品，在全球多点开花。",
+    expandDetails: []
   }
 ];
 
@@ -240,7 +247,7 @@ export const portfolioItems: PortfolioItem[] = [
     subtitle: "益世界极限运动艺术联名滑板",
     category: "brand",
     tags: ["运动单品", "街头艺术", "色彩碰撞"],
-    description: "融合街头涂鸦与赛博蓝紫色荧光线条，以巨大的俯冲「益小萌」半透光影作为板底主画，高张力的喷漆质感和滴墨印记。专为品牌年轻化宣发拍摄及潮流青年群体定制。",
+    description: "融合街头涂鸦与赛博蓝紫色荧光线条，以巨大的俯冲「益小萌」半透光影作为板底主画，高张力的喷漆质感 and 滴墨印记。专为品牌年轻化宣发拍摄与潮流青年群体定制。",
     details: {
       role: "潮流美学指导",
       team: "先锋视觉实验室",
@@ -273,7 +280,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "益世界 精英开发者沙龙主KV",
     subtitle: "面向全球开发者的设计峰会KV",
     category: "brand",
-    tags: ["大会KV", "抽象极简", "发光渐变"],
+    tags: ["大会KV", "抽象极简", "發光渐变"],
     description: "提取「连接、绽放、共生」概念，用数万个微型晶莹3D光粒子聚合构成璀璨流动的蓝色星河，文字部分采用极其端正的高逼格无衬线字体，字间距刻意拉宽，传递严谨前沿的数字学术氛围。",
     details: {
       role: "主场景概念师",
@@ -358,7 +365,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "益世界 环保创意咖啡杯套系列",
     subtitle: "「益咖生活」内部咖啡专属杯套",
     category: "brand",
-    tags: ["平面媒介", "极简字母", "牛皮纸色"],
+    tags: ["平面媒介", "极极简字母", "牛皮纸色"],
     description: "打破传统插图杯套繁杂感，本案仅采用极高对比度的超大现代黑体排版字母「E」与「W」。大面积保留本色无漂白牛皮纸的纯粹纹理与微小木屑纤维，契合国际绿色减碳的极高环保标准。",
     details: {
       role: "包装主设计师",
@@ -464,7 +471,7 @@ export const portfolioItems: PortfolioItem[] = [
     subtitle: "全新传奇名士卡牌角色首发海报",
     category: "good-fields",
     tags: ["国风立绘", "水墨山水", "色彩渐层"],
-    description: "薛涛，大唐一代诗妓。本画以温润的绯红色调为主干，薛涛身姿倚立于重重晕染的水墨红梅与娟秀楷书诗词之中，衣褶随风流转。将水墨留白之美与女性名仕的哀宛典雅表现得入木三分。",
+    description: "薛涛，大唐一代诗家。本画以温润的绯红色调为主干，薛涛身姿倚立于重重晕染的水墨红梅与娟秀楷书诗词之中，衣褶随风流转。将水墨留白之美与女性名仕的哀宛典雅表现得入木三分。",
     details: {
       role: "高级游戏插画师",
       team: "《这城有良田》重火力原画组",
@@ -727,23 +734,6 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ["漫画大集合", "喜庆动漫", "黄金粒子"],
     description: "以「财源广进，东家威武」为创意切入点，本画利用高密度的透视排铺技术，将游戏三十余款活泼角色层层叠起。头顶财神洒下大蓬灿烂鎏金大铜钱和祥云，具有极强的商业吸睛度，一经推出便引爆公测热度。",
     details: {
-      role: "创意总监 · 平面首席",
-      team: "《我是大东家》视觉一组",
-      software: "Photoshop, Illustrator",
-      date: "2023.05"
-    },
-    imageType: "merchant-comic",
-    colors: { primary: "#7f1d1d", secondary: "#b91c1c", accent: "#fcd34d", gradient: "from-[#7f1d1d] via-[#fcd34d] to-[#b91c1c]" },
-    aspectRatio: "landscape"
-  },
-  {
-    id: "ea2",
-    title: "「大东家 x 国民神漫」梦幻联动主KV海报",
-    subtitle: "限定动漫角色降临系列主设计",
-    category: "big-boss",
-    tags: ["联动视觉", "复古印刷", "漫画分格"],
-    description: "本案重创二十世纪华语复古连环画、老报纸的印刷风格。利用大颗粒斑驳网点肌理、厚重边缘墨线及手写宣传宋体，完美展示出古代商圣与童年动漫巨作的奇妙跨圈交汇，趣味性破屏而出。",
-    details: {
       role: "核心跨界海报师",
       team: "先锋视觉跨界项目组",
       software: "Photoshop, Retrographer",
@@ -828,7 +818,7 @@ export const portfolioItems: PortfolioItem[] = [
     subtitle: "网络自媒体高流量漫画案例",
     category: "big-boss",
     tags: ["新媒体插图", "爆笑剧场", "Q萌线条"],
-    description: "针对两名爆萌商人斗智斗法、为了抢揽布偶庄而互相搞怪的故事。纯扁平高能亮黄底，线条狂野幽默，是年轻一代网网民深爱的自媒体神曲、具有惊人的社交分享能量。",
+    description: "针对两名爆萌商人斗智斗法、为了抢揽布偶庄而互相搞怪的故事。纯扁平高能亮黄底，线条狂野幽默，是年轻一代网民深爱的自媒体神曲、具有惊人的社交分享能量。",
     details: { role: "爆笑动漫主笔", team: "新媒体内容运营组", software: "Procreate, Photoshop", date: "2023.11" },
     imageType: "merchant-comic",
     colors: { primary: "#ea580c", secondary: "#facc15", accent: "#fff7ed", gradient: "from-[#ea580c] to-[#facc15]" }, aspectRatio: "portrait"
@@ -861,7 +851,7 @@ export const portfolioItems: PortfolioItem[] = [
     subtitle: "全新传奇古侠卡牌降临宣推主视觉",
     category: "big-boss",
     tags: ["小鱼儿花无缺", "硬朗格调", "水墨劈裂"],
-    description: "小鱼儿手持折折扇、玩世不恭，与高贵清冷、白褂飘飘的花无缺并肩而立。画风将浓艳美漫分色与大块传统中国黑白大泼墨奇妙糅合，为国剧联名大立绘指明了全新方向。",
+    description: "小鱼儿手持折扇、玩世不恭，与高贵清冷、白褂飘飘的花无缺并肩而立。画风将浓艳美漫分色与大块传统中国黑白大泼墨奇妙糅合，为国剧联名大立绘指明了全新方向。",
     details: { role: "首席宣发平面师", team: "爆款联名专项组", software: "Photoshop, InDesign", date: "2024.08" },
     imageType: "merchant-comic",
     colors: { primary: "#1e1b4b", secondary: "#9333ea", accent: "#faf5ff", gradient: "from-[#1e1b4b] via-[#9333ea] to-[#faf5ff]" }, aspectRatio: "portrait"
@@ -906,24 +896,24 @@ export const portfolioItems: PortfolioItem[] = [
     category: "big-boss",
     tags: ["微信动态贴纸", "Q版巨萌", "爆款表情"],
     description: "绘制表情：圆滚肥硕的金牌掌柜抱住一个比头还大、闪闪发光的巨大金元宝、乐得口水直流。本系列表情已狂揽上百万使用率，成为玩家群聊天斗图的镇群法宝。",
-    details: { role: "IP衍生插师", team: "IP与潮玩开发实验室", software: "Animate, Procreate", date: "2023.06" },
+    details: { role: "IP衍生插画师", team: "IP与潮玩开发实验室", software: "Animate, Procreate", date: "2023.06" },
     imageType: "merchant-comic",
     colors: { primary: "#d97706", secondary: "#eab308", accent: "#fef3c7", gradient: "from-[#d97706] to-[#eab308]" }, aspectRatio: "square"
   },
   {
     id: "ea14",
     title: "「Q萌微信表情包之二：东家威武」",
-    subtitle: "爆笑群聊神表情案例",
+    subtitle: "爆爆款表情包案例",
     category: "big-boss",
     tags: ["微信表情包", "魔性姿态", "Q萌动态"],
-    description: "表情为身披貂绒大斗篷、戴着漆黑超大酷眼镜的大东家，正缓缓拿出两个纯金的大元宝宝，摆出豪横又滑稽的中式神豪搞笑动作，深受玩家大叔及年轻白领群体的欢心。",
-    details: { role: "IP衍生插师", team: "IP与潮玩开发实验室", software: "Photoshop, Adobe Animate", date: "2023.06" },
+    description: "表情为身披貂绒大斗篷、戴着漆黑超大酷眼镜的大东家，正缓缓拿出两个纯金的大元宝，摆出豪横又滑稽的中式神豪搞笑动作，深受玩家大叔及年轻白领群体的欢心。",
+    details: { role: "IP衍生插画师", team: "IP与潮玩开发实验室", software: "Photoshop, Adobe Animate", date: "2023.06" },
     imageType: "merchant-comic",
     colors: { primary: "#1e1b4b", secondary: "#4f46e5", accent: "#ffffff", gradient: "from-[#1e1b4b] to-[#4f46e5]" }, aspectRatio: "square"
   },
   {
-    id: "ea15",
-    title: "「龙风呈瑞：端午竞拼大龙舟」限定海报",
+    id: "drag_drop",
+    title: "「龙凤呈祥：端午竞拼大龙舟」限定海报",
     subtitle: "端午佳节限时大型竞技主KV",
     category: "big-boss",
     tags: ["龙纹重彩", "波涛怒海", "节日限定"],
@@ -938,7 +928,7 @@ export const portfolioItems: PortfolioItem[] = [
     subtitle: "核心海派贸易地图发布原件",
     category: "big-boss",
     tags: ["奇幻星空", "大漠丝绸", "浪漫国漫"],
-    description: "大片深蓝深靛的无垠星空下，驼队正从一扇高耸入云的残破古西域拱门中緩步走来。本画作非常讲究极致的寂静感和孤独的大场景透视，文字选用极度精巧小号中宋体，气场尊贵。",
+    description: "大片深蓝深靛的无垠星空下，驼队正从一扇高耸入云的残破古西域拱门中缓步走来。本画作非常讲究极致的寂静感和孤独的大场景透视，文字选用极度精巧小号中宋体，气场尊贵。",
     details: { role: "首席绘景师", team: "研发原美部二组", software: "Photoshop, Cinema 4D", date: "2024.04" },
     imageType: "merchant-comic",
     colors: { primary: "#1e1b4b", secondary: "#312e81", accent: "#fed7aa", gradient: "from-[#1e1b4b] via-[#312e81] to-[#fed7aa]" }, aspectRatio: "landscape"
@@ -949,19 +939,19 @@ export const portfolioItems: PortfolioItem[] = [
     subtitle: "高人气捉贼玩法推广海报设计",
     category: "big-boss",
     tags: ["冷酷逆光", "暗黑剪影", "名捕捉刀"],
-    description: "本案设计极其酷炫冷硬，采用夜暮漆黑基调，配以大门缝照入的一缕猩红极光。帅气的神捕带着黑皮眼罩、拔刀欲出，将极简排版美学和古典刺客氛围完美演绎到极致高度。",
+    description: "本案设计极其酷炫冷硬，采用夜暮漆黑基调，配以大门缝照入的一缕猩红极光。帅气的神捕带着黑皮眼罩、拔刀欲出，将极简排版美学与古典刺客氛围完美演绎到极致高度。",
     details: { role: "平面主设计师", team: "《我是大东家》视觉一组", software: "Photoshop, Clip Studio", date: "2024.09" },
     imageType: "geometry",
     colors: { primary: "#0b0f19", secondary: "#18181b", accent: "#ef4444", gradient: "from-[#0b0f19] to-[#ef4444]" }, aspectRatio: "portrait"
   },
   {
     id: "ea18",
-    title: "「我是大东家」限定Q版积木拼图公仔設定",
+    title: "「我是大东家」限定Q版积木拼图公仔设定",
     subtitle: "旗舰款积木潮流衍生公仔外观原彩",
     category: "big-boss",
     tags: ["像素化拼装", "潮玩周边", "实体设定"],
     description: "这是一套潮流拼装塑料像素小人的3D草图展示。利用高漫反射的马卡龙彩色塑料块重新堆垒出游戏多位古灵名气角色，在潮流展馆、玩具实体店首发即被全系列抢购一空。",
-    details: { role: "玩具结构平面师", team: "IP衍生與潮玩开发实验室", software: "Rhino, MagicaVoxel, Photoshop", date: "2025.01" },
+    details: { role: "玩具结构平面师", team: "IP衍生与潮玩开发实验室", software: "Rhino, MagicaVoxel, Photoshop", date: "2025.01" },
     imageType: "abstract",
     colors: { primary: "#0284c7", secondary: "#0369a1", accent: "#bae6fd", gradient: "from-[#0284c7] to-[#bae6fd]" }, aspectRatio: "square"
   },
