@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Left Block: Text, Contact detail lines */}
           <div className="lg:col-span-4 flex flex-col justify-start text-left">
             <span className="font-mono text-xs font-bold tracking-[0.25em] text-indigo-500 uppercase mb-4">
-              BUSINESS CONNECTIONS // 业务联系
+              BUSINESS CONNECTIONS
             </span>
             <h3 className="font-sans font-black text-3xl text-gray-950 dark:text-white mb-6 tracking-tight">
               与我们共创未来
@@ -179,7 +179,7 @@ export default function Footer() {
             {/* Small text indicator overlay */}
             <div className="absolute bottom-6 left-6 right-6 text-white text-left select-none pointer-events-none">
               <span className="text-[10px] font-mono tracking-widest text-[#a855f7] font-bold block mb-1 uppercase">
-                COMMUNITY OUTLOOK // 公司掠影
+                COMMUNITY OUTLOOK
               </span>
               <h4 className="font-sans font-bold text-base md:text-lg leading-snug">
                 益世界智慧创作大厅

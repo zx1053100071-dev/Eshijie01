@@ -5,7 +5,8 @@
 
 import { useState, useEffect } from 'react';
 import { Sun, Moon, Sparkles, Menu, X } from 'lucide-react';
-import logoImg from './logo2.png';
+
+const logoImg = '/logo2.png';
 
 interface HeaderProps {
   isDark: boolean;
@@ -63,7 +64,9 @@ export default function Header({ isDark, onToggleTheme }: HeaderProps) {
           <img
             src={logoImg}
             alt="益世界・设计中心 Logo"
-            className="h-8 w-auto max-w-[140px] object-contain transition-transform duration-300 group-hover:scale-105"
+            className={`h-8 w-auto max-w-[140px] object-contain transition-transform duration-300 group-hover:scale-105 ${
+              !isDark && scrolled ? 'invert dark:invert-0' : ''
+            }`}
             referrerPolicy="no-referrer"
           />
           <div className="flex flex-col">

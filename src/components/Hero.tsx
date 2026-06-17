@@ -4,7 +4,8 @@
  */
 
 import { ArrowDown, Play, Sparkles } from 'lucide-react';
-import logoImg from './logo2.png';
+
+const logoImg = '/logo2.png';
 
 interface HeroProps {
   onDiscoverClick: () => void;

@@ -363,7 +363,7 @@ export default function PortfolioSlider({
                   {item.imageType === 'chinese-ink' ? <Cpu size={10} className="text-emerald-400" /> : <Smartphone size={10} className="text-purple-400" />}
                   {item.details.software.split(',')[0]} // Design Node
                 </span>
-                <h4 className="font-sans font-black text-lg md:text-xl text-white tracking-tight leading-snug group-hover:text-amber-300 transition-colors">
+                <h4 className="font-sans font-black text-lg md:text-xl text-white tracking-tight leading-snug group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-cyan-400 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                   {item.title}
                 </h4>
                 <p className="font-sans text-xs text-gray-300 mt-2 line-clamp-2 leading-relaxed font-light opacity-90">

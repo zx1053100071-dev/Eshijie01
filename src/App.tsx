@@ -97,7 +97,7 @@ export default function App() {
         <PortfolioSlider
           id="portfolio-brand"
           title="品牌与IP系统设计"
-          subtitle="益世界企业品牌形象、吉祥物「益小萌」衍生及全球宣传视觉策划"
+          subtitle="益世界企业品牌形象、吉祥物「小益小梦」衍生及全球宣传视觉策划"
           items={brandItems}
           onItemSelect={setSelectedItem}
         />

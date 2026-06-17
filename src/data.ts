@@ -5,20 +5,17 @@
 
 import { CompanyInfo, Milestone, PortfolioItem, ContactDetails } from './types';
 
-import goodFieldsImg1 from '../assets/good-fields/g1.png';
-import goodFieldsImg2 from '../assets/good-fields/g2.png';
-import goodFieldsImg3 from '../assets/good-fields/g3.png';
-import goodFieldsImg4 from '../assets/good-fields/g4.png';
-import goodFieldsImg5 from '../assets/good-fields/g5.png';
-import goodFieldsImg6 from '../assets/good-fields/g6.png';
-import goodFieldsImg7 from '../assets/good-fields/g7.png';
-import goodFieldsImg8 from '../assets/good-fields/g8.png';
-import goodFieldsImg9 from '../assets/good-fields/g9.png';
-import goodFieldsImg10 from '../assets/good-fields/g10.png';
-
 const goodFieldsImages = [
-  goodFieldsImg1, goodFieldsImg2, goodFieldsImg3, goodFieldsImg4, goodFieldsImg5,
-  goodFieldsImg6, goodFieldsImg7, goodFieldsImg8, goodFieldsImg9, goodFieldsImg10
+  '/good-fields/g1.png',
+  '/good-fields/g2.png',
+  '/good-fields/g3.png',
+  '/good-fields/g4.png',
+  '/good-fields/g5.png',
+  '/good-fields/g6.png',
+  '/good-fields/g7.png',
+  '/good-fields/g8.png',
+  '/good-fields/g9.png',
+  '/good-fields/g10.png'
 ];
 
 export const companyInfo: CompanyInfo = {
@@ -124,11 +121,11 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: "b2",
-    title: "「益小萌」12款职业版潮流表情包",
+    title: "「小益小梦」12款职业版潮流表情包",
     subtitle: "品牌吉祥物 IP 全方位升级设计",
     category: "brand",
     tags: ["IP设计", "三维建模", "表情设计"],
-    description: "将益世界吉祥物「益小萌」融合现代职场职业特征，设计出黑客、策划、产品经理等12生动款三维渲染表情。用Q弹圆润的体态与炫彩高光的流延材质完美调配，打造富有沟通温度的衍生爆款。",
+    description: "将益世界吉祥物「小益小梦」融合现代职场职业特征，设计出黑客、策划、产品经理等12生动款三维渲染表情。用Q弹圆润的体态与炫彩高光的流延材质完美调配，打造富有沟通温度的衍生爆款。",
     details: {
       role: "IP设计师",
       team: "IP与潮玩开发实验室",
@@ -158,11 +155,11 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: "b4",
-    title: "「益小萌」3D赛博潮玩盲盒概念",
+    title: "「小益小梦」3D赛博潮玩盲盒概念",
     subtitle: "限定机甲潮玩潮流玩具设定",
     category: "brand",
     tags: ["潮玩开发", "3D工业渲染", "包装设计"],
-    description: "将中国傳統生肖元素注入赛博机械外骨骼，设计了全系列「益小萌」潮玩玩具三维草案。结合磨砂哑光ABS材料与透明发光树脂，完美展示出硬核机械美学与圆润小巧身躯的极致反差萌。",
+    description: "将中国傳統生肖元素注入赛博机械外骨骼，设计了全系列「小益小梦」潮玩玩具三维草案。结合磨砂哑光ABS材料与透明发光树脂，完美展示出硬核机械美学与圆润小巧身躯的极致反差萌。",
     details: {
       role: "主潮流玩具师",
       team: "IP衍生部",
@@ -192,11 +189,11 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: "b6",
-    title: "「益小萌」异时空奇幻换装周历插画",
+    title: "「小益小梦」异时空奇幻换装周历插画",
     subtitle: "12个月的主题情境概念海报",
     category: "brand",
     tags: ["精细插画", "角色设计", "日历周边"],
-    description: "设计融合西方朋克、和风山水和极简黑白线条，展现「益小萌」在12个充满奇妙幻想异世界中探险的绘卷故事。整体色系对比极度强烈，以精妙的插画细部来吸引观者的探索欲望。",
+    description: "设计融合西方朋克、和风山水和极简黑白线条，展现「小益小梦」在12个充满奇妙幻想异世界中探险的绘卷故事。整体色系对比极度强烈，以精妙的插画细部来吸引观者的探索欲望。",
     details: {
       role: "美术主笔",
       team: "插画原画组",
@@ -243,11 +240,11 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: "b9",
-    title: "「益小萌」极速飞跃滑板周边设计",
+    title: "「小益小梦」极速飞跃滑板周边设计",
     subtitle: "益世界极限运动艺术联名滑板",
     category: "brand",
     tags: ["运动单品", "街头艺术", "色彩碰撞"],
-    description: "融合街头涂鸦与赛博蓝紫色荧光线条，以巨大的俯冲「益小萌」半透光影作为板底主画，高张力的喷漆质感 and 滴墨印记。专为品牌年轻化宣发拍摄与潮流青年群体定制。",
+    description: "融合街头涂鸦与赛博蓝紫色荧光线条，以巨大的俯冲「小益小梦」半透光影作为板底主画，高张力的喷漆质感 and 滴墨印记。专为品牌年轻化宣发拍摄与潮流青年群体定制。",
     details: {
       role: "潮流美学指导",
       team: "先锋视觉实验室",
@@ -294,11 +291,11 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: "b12",
-    title: "「益小萌」太空探险概念银漆海报",
+    title: "「小益小梦」太空探险概念银漆海报",
     subtitle: "宇航探索主题的创意衍生插画",
     category: "brand",
     tags: ["科幻质感", "金属喷涂", "IP衍生"],
-    description: "为响应科技科普项目，我们创作了穿着厚重银色宇航服的太空人「益小萌」。作品高度关注金属涂层的反光逻辑、镜面玻璃所反射的绚丽星云。采用高阶哑光特殊银墨进行物理排版，具有浓郁未来感。",
+    description: "为响应科技科普项目，我们创作了穿着厚重银色宇航服的太空人「小益小梦」。作品高度关注金属涂层的反光逻辑、镜面玻璃所反射的绚丽星云。采用高阶哑光特殊银墨进行物理排版，具有浓郁未来感。",
     details: {
       role: "数字绘景师",
       team: "IP与潮玩开发实验室",
@@ -315,7 +312,7 @@ export const portfolioItems: PortfolioItem[] = [
     subtitle: "员工专属限量创意春服体系",
     category: "brand",
     tags: ["服装裁剪", "刺绣质感", "周边设计"],
-    description: "本期高定工装采用洗水厚实黑色帆布，剪裁干净干练。衣袖两侧采用多达三万针的高精密彩色五金刺绣，浮雕式描绘「益小萌」在太空中傲立的坚毅神貌。兼具日常实用性和前沿街头潮流质感。",
+    description: "本期高定工装采用洗水厚实黑色帆布，剪裁干净干练。衣袖两侧采用多达三万针的高精密彩色五金刺绣，浮雕式描绘「小益小梦」在太空中傲立的坚毅神貌。兼具日常实用性和前沿街头潮流质感。",
     details: {
       role: "新服饰设计师",
       team: "企业文化运营组",
@@ -396,11 +393,11 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: "b18",
-    title: "「益小萌」金属机甲限定款手办设定",
+    title: "「小益小梦」金属机甲限定款手办设定",
     subtitle: "品牌潮玩艺术旗舰级别限定手办",
     category: "brand",
     tags: ["3D概念", "科幻炫彩", "手办开发"],
-    description: "针对收藏家设计的高端限量款手办。将「益小萌」的主体结构重新拆解定义，覆以黑曜石冷光机甲外壳与纯金阳极氧化轴承，打造出超越传统软胶玩具质感的工业微雕艺术珍品。",
+    description: "针对收藏家设计的高端限量款手办。将「小益小梦」的主体结构重新拆解定义，覆以黑曜石冷光机甲外壳与纯金阳极氧化轴承，打造出超越传统软胶玩具质感的工业微雕艺术珍品。",
     details: {
       role: "主潮玩数字雕刻师",
       team: "IP衍生與潮玩开发实验室",

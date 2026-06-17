@@ -34,7 +34,7 @@ export default function About() {
           {/* Left: Heading block */}
           <div className="lg:col-span-5 flex flex-col justify-start">
             <span className="font-mono text-xs font-bold tracking-[0.2em] text-indigo-500 uppercase mb-4">
-              ABOUT THE STUDIO // 公司介绍
+              ABOUT THE STUDIO
             </span>
             <h2 className="font-sans font-black text-4xl sm:text-5xl tracking-normal text-gray-900 dark:text-white mb-6 leading-tight">
               益世界
@@ -47,14 +47,6 @@ export default function About() {
             <div className="p-1 px-4 self-start rounded-full bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100/50 dark:border-indigo-900/40 text-xs font-semibold text-indigo-700 dark:text-indigo-300 font-sans tracking-widest mb-8">
               用好游戏创造快乐
             </div>
-            
-            {/* Elegant Quotation block */}
-            <blockquote className="relative pl-6 border-l-2 border-indigo-500/50 italic text-gray-600 dark:text-gray-400 font-serif text-sm lg:text-base mb-4 leading-relaxed">
-              “ {companyInfo.quote} ”
-              <cite className="block not-italic font-sans font-semibold text-xs tracking-wider text-gray-800 dark:text-gray-200 mt-3 uppercase text-right">
-                — {companyInfo.quoteAuthor}
-              </cite>
-            </blockquote>
           </div>
 
           {/* Right: Intro paragraphs & Highlight features */}
@@ -93,7 +85,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-gray-100 dark:border-gray-900 pb-8">
             <div className="mb-4 md:mb-0">
               <span className="font-mono text-xs font-bold tracking-[0.2em] text-indigo-500 uppercase">
-                CHRONOLOGY // 发展历程
+                CHRONOLOGY
               </span>
               <h3 className="font-sans font-black text-2xl sm:text-3xl text-gray-900 dark:text-white tracking-tight mt-1">
                 时光刻度与里程碑
