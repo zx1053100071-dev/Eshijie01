@@ -6,7 +6,8 @@
 import { useState, useEffect } from 'react';
 import { Sun, Moon, Sparkles, Menu, X } from 'lucide-react';
 
-const logoImg = '/logo2.png';
+const logoWhite = '/logo-完整1-白色字.png';
+const logoBlack = '/logo-完整1-黑色字.png';
 
 interface HeaderProps {
   isDark: boolean;
@@ -62,25 +63,16 @@ export default function Header({ isDark, onToggleTheme }: HeaderProps) {
           id="header-brand-logo"
         >
           <img
-            src={logoImg}
+            src={isDark ? logoWhite : (scrolled ? logoBlack : logoWhite)}
             alt="益世界・设计中心 Logo"
-            className={`h-8 w-auto max-w-[140px] object-contain transition-transform duration-300 group-hover:scale-105 ${
-              !isDark && scrolled ? 'invert dark:invert-0' : ''
-            }`}
+            className="h-8 w-auto max-w-[140px] object-contain transition-transform duration-300 group-hover:scale-105"
             referrerPolicy="no-referrer"
           />
-          <div className="flex flex-col">
-            <span className={`font-sans font-bold text-sm tracking-tight transition-colors duration-300 leading-none mb-0.5 ${
-              !isDark && scrolled ? 'text-black' : 'text-white'
-            }`}>
-              益世界・设计中心
-            </span>
-            <span className={`font-mono text-[9px] tracking-widest transition-colors duration-300 leading-none uppercase ${
-              !isDark && scrolled ? 'text-black/60' : 'text-gray-400'
-            }`}>
-              Eworld Design Portfolios
-            </span>
-          </div>
+          <span className={`font-sans font-bold text-sm tracking-tight transition-colors duration-300 leading-none ${
+            !isDark && scrolled ? 'text-black' : 'text-white'
+          }`}>
+            设计中心
+          </span>
         </div>
 
         {/* Desktop Menu navigation */}

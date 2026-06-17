@@ -108,7 +108,7 @@ export default function About() {
 
                 {/* Elegant interactive card utilizing split grid for screen-adaptive responsive display */}
                 <div
-                  className="p-6 md:p-8 rounded-2xl border border-gray-100 dark:border-gray-900/60 bg-white dark:bg-gray-900/20 shadow-sm hover:shadow-md hover:border-indigo-100 dark:hover:border-indigo-950/60 hover:bg-gradient-to-br hover:from-white hover:to-indigo-50/10 dark:hover:from-gray-900/30 dark:hover:to-indigo-950/5 transition-all duration-300 text-left"
+                  className="p-6 md:p-8 rounded-2xl border border-gray-100 dark:border-gray-900/60 bg-white dark:bg-gray-900/20 shadow-sm hover:shadow-md hover:border-indigo-100 dark:hover:border-indigo-500/50 hover:bg-gradient-to-br hover:from-white hover:to-indigo-50/10 dark:hover:from-gray-900/80 dark:hover:to-indigo-950/30 dark:hover:shadow-indigo-900/20 transition-all duration-300 text-left"
                 >
                   <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
                     

@@ -51,7 +51,7 @@ export default function Hero({ onDiscoverClick }: HeroProps) {
           <img
             src={logoImg}
             alt="Logo"
-            className="h-5 sm:h-6 w-auto object-contain brightness-110"
+            className="h-5 sm:h-6 w-auto object-contain"
             referrerPolicy="no-referrer"
           />
           <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0" />
